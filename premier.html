@@ -9,14 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Главная - Venom 2</title>
+  <title>До премьеры - Venom 2</title>
 </head>
 
 <body class="blood">
   <div class="container">
     <header class="header">
-
-      
       <a href="./index.html" class="logo-link">
         <img width="46" height="71" src="./img/logo.png" alt="logo: venom" class="logo-image">
       </a>
@@ -45,36 +43,20 @@
         </ul>
       </nav>
     </header>
-    <div class="film">
-      <div class="film-text">
-        <span class="film-date">16 сентября 2021</span>
-        <img src="./img/Venom-2.svg" alt="logo: venom-2" class="film-logo">
-        <p class="film-description">
-          В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов
-          Marvel.
-        </p>
-      </div>
-      <!-- /.film-text -->
-      <div class="button-group">
-        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
-          <img width="15" src="./img/play.svg" alt="icon-play" class="button-icon">
-          <span class="button-text">смотреть трейлер</span>
-        </a>
-        <a href="https://ticketon.kz/event/venom-2" class="button button-link">
-          <img width="15" src="./img/ticket.svg" alt="icon: Ticket" class="button-icon">
-          <span class="button-text">билеты на премьеру</span>
-        </a>
-      </div>
-      <!-- /.button-group -->
-    </div>
-    <!-- /.film -->
+    <div class="eTimer"></div>
   </div>
   <!-- /.container -->
-  <img src="./img/venom.png" alt="photo: venom" class="venom">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://e-timer.ru/js/etimer.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      jQuery(".eTimer").eTimer({
+        etType: 0, etDate: "16.09.2021.0.0", etTitleText: "До премьеры - Venom 2", etTitleSize: 43, etShowSign: 1, etSep: ":", etFontFamily: "Verdana", etTextColor: "#fbfaff", etPaddingTB: 17, etPaddingLR: 15, etBackground: "#14131a", etBorderSize: 0, etBorderRadius: 7, etBorderColor: "#14131a", etShadow: " 0px 0px 10px 0px #14131a", etLastUnit: 3, etNumberFontFamily: "Impact", etNumberSize: 98, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#14131a", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "#14131a", etNumberShadow: "inset 0px 0px 10px 0px #14131a"
+      });
+    });
+  </script>
 </body>
 
 </html>
